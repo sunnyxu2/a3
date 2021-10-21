@@ -1,0 +1,32 @@
+Script started on 2021-10-21 04:31:03+00:00 [TERM="screen" TTY="/dev/pts/3" COLUMNS="120" LINES="29"]
+xu@f6linux15:~$ sed -r 's/\b(the(\s)?)\b//g' 0439139597.TRIMMED.txt [K > 0439139597.TRIMMEDMORE.txt
+xu@f6linux15:~$ paste -d '[K"\t" PRODUCTS-A3/0439139597.BINARY.txt 0439139597.TRIMMEDMORE.txt > 0439139597.REMERGED2.txt
+xu@f6linux15:~$ [Kxu@f6linux15:~$ awk -F "\t" '{split($3, words, " "); for (i=1;i<=length(words);i++) { if ($2==0) { count[words[i]]+=1;}}} END {for (key in count) {printf("%s\t%s\n", key, count[key])}}' 0439139597.REMERGED.txt | sort -k 2 -n -r | head -n 10M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2.txt | sort -k 2 -n -r | head[1@ M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+book	4292
+Harry	2598
+this	2409
+that	2374
+for	1825
+was	1747
+Potter	1726
+you	1615
+read	1567
+books	1413
+xu@f6linux15:~$ awk -F "\t" '{split($3, words, " "); for (i=1;i<=length(words);i++) { if ($2==0) { count[words[i]]+=1;}}} END {for (key in count) {printf("%s\t%s\n", key, count[key])}}' 0439139597.REMERGED2.txt | sort -k 2 -n -r | head -n 10M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C) { count[words[i]]+=1;}[C[C END {for (key in count) {printf("%s\t%s\n", key, count[key])}}' 0439139597.REMERGED2.txt | sort -k 2 -n -r | head [1PMM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1) { count[words[i]]+=1;[C[C} END {for (key in count) {printf("%s\t%s\n", key, count[key])}}' 0439139597.REMERGED2.txt | sort -k 2 -n -r | head[1@ MM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+
+book	1143
+Harry	712
+this	654
+that	637
+read	520
+was	484
+for	481
+you	472
+Potter	451
+books	412
+xu@f6linux15:~$ history | head[K[K[K[Ktail -n 10 > a3/cmds3.log
+xu@f6linux15:~$ exit
+
+Script done on 2021-10-21 04:33:38+00:00 [COMMAND_EXIT_CODE="0"]

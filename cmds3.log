@@ -1,0 +1,10 @@
+ 1350  }}' 0439139597.REMERGED.txt | sort -k 2 -n -r > 0439139597.WORDSORTED.txt
+ 1351  head -n 10 0439139597.WORDSORTED.txt 
+ 1352  nano a3/a3.txt
+ 1353  head -n 1 amazon_reviews_us_Books_v1_02.tsv 
+ 1354  tmux
+ 1355  sed -r 's/\b(the(\s)?)\b//g' 0439139597.TRIMMED.txt > 0439139597.TRIMMEDMORE.txt
+ 1356  paste -d "\t" PRODUCTS-A3/0439139597.BINARY.txt 0439139597.TRIMMEDMORE.txt > 0439139597.REMERGED2.txt
+ 1357  awk -F "\t" '{split($3, words, " "); for (i=1;i<=length(words);i++) { if ($2==0) { count[words[i]]+=1;}}} END {for (key in count) {printf("%s\t%s\n", key, count[key])}}' 0439139597.REMERGED2.txt | sort -k 2 -n -r | head -n 10
+ 1358  awk -F "\t" '{split($3, words, " "); for (i=1;i<=length(words);i++) { if ($2==1) { count[words[i]]+=1;}}} END {for (key in count) {printf("%s\t%s\n", key, count[key])}}' 0439139597.REMERGED2.txt | sort -k 2 -n -r | head -n 10
+ 1359  history | tail -n 10 > a3/cmds3.log
